@@ -24,6 +24,6 @@ Las traducciones son mantenidas por sus creadores y es posible que no estén al 
 - [Portuguese](http://webfatorial.github.io/wtf-html-css/) - Traducido por [webfatorial](http://webfatorial.com/)
 - [Spanish]() - Traducido por [aauri](https://github.com/aauri)
 
-Tienes una traducción que te gustaría añadir? Abre una *pull request* para añadirla aquí (en order alfabético).
+Tienes una traducción que te gustaría añadir? Abre un *pull request* para añadirla aquí (en order alfabético).
 
 <3
