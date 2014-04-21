@@ -10,8 +10,8 @@ layout: default
 - [Flotantes "*Floats*" primero](#floats-first)
 - [*Floats* y la propiedad `clear`](#floats-clearing)
 - [*Floats* y la altura calculada](#floats-computed-height)
-- [*Floats* son a nivel de bloque (*block level*)](#floats-block-level)
-- [Márgenes verticales a veces se cierran (*collapse*)](#vertical-margins-collapse)
+- [*Floats* son a nivel de bloque (block level)](#floats-block-level)
+- [Márgenes verticales a veces se cierran (collapse)](#vertical-margins-collapse)
 - [Composición visual de filas de las tablas](#styling-table-rows)
 - [Firefox y los botones `<input>` ](#buttons-firefox)
 - [Firefox y los bordes internos de botones](#buttons-firefox-outline)
@@ -130,7 +130,7 @@ Un elemento padre que solo tiene contenido `float` tendrá la altura calcuda `he
 
 <a name="floats-block-level"></a>
 ### *Floats* son a nivel de bloque (block level)
-Elementos `float` son automaticamente a nivel de bloque `display: block;`. No es necesario especificar `display` ya que sera ignorada por el navegador a menos que tenga el valor `none`.
+Elementos `float` son automaticamente a nivel de bloque `display: block;`. No es necesario especificar `display` ya que sera ignorado por el navegador a menos que tenga el valor `none`.
 
 
 ```css
@@ -141,7 +141,7 @@ Elementos `float` son automaticamente a nivel de bloque `display: block;`. No es
 ```
 
 
-***Fun fact:*** *Hace años, tuvimos que especificar `display: inline;` para hacer que la propiedad `float` funcione correctamente en IE6 y evitar el [bug de margen duplicado](http://www.positioniseverything.net/explorer/doubled-margin.html). Sin embargo, esos días han quedado atrás.*
+**Fun fact:** *Hace años, tuvimos que especificar `display: inline;` para hacer que la propiedad `float` funcione correctamente en IE6 y evitar el [bug de margen duplicado](http://www.positioniseverything.net/explorer/doubled-margin.html). Sin embargo, esos días han quedado atrás.*
 
 
 <a name="vertical-margins-collapse"></a>
@@ -185,7 +185,6 @@ Si prefieres usar la segunda opción, simplemente excluye `line-height` y en cam
 
 <a name="buttons-firefox-outline"></a>
 ### Firefox y los bordes internos de botones
-
 Firefox [añade bordes internos](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#Notes) a los botones `<input>` y `<button>` en la propiedad `:focus`. Al parecer, es para la accesibilidad, pero su ubicación parece bastante extraña. Usa esta solución en CSS para ignorar estos bordes:
 
 
@@ -244,7 +243,7 @@ input[type="text"],
 
 <a name="position-explained"></a>
 ### Posicionamiento `position` aclarado
-Elementos `position: fixed;` son colocados en relación a la ventanilla *"viewport"* del navegador. Elementos `position: absolute;` se posicionan en relación a su bloque padre  más cercano que tenga una posición aparte a `static` (como por ejemplo, `relative`, `absolute`, o `fixed`).
+Elementos `position: fixed;` son colocados en relación a la ventanilla *"viewport"* del navegador. Elementos `position: absolute;` se posicionan en relación a su bloque padre más cercano que tenga una posición aparte a `static` (como por ejemplo, `relative`, `absolute`, o `fixed`).
 
 
 <a name="position-width"></a>
