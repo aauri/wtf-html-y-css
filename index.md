@@ -5,7 +5,7 @@ layout: default
 ### Contenido
 
 - [Declara un doctype](#doctype)
-- [Matemática del modelo de caja (*Box Model*)](#box-model-math)
+- [Matemática del modelo de caja (Box Model)](#box-model-math)
 - [Unidades `rem` y Safari móvil](#rems-mobile-safari)
 - [Flotantes "*Floats*" primero](#floats-first)
 - [*Floats* y la propiedad `clear`](#floats-clearing)
@@ -26,16 +26,18 @@ layout: default
 ### Declara un doctype
 Incluye siempre un doctype. Les recomiendo el simple doctype de HTML5:
 
+
 ```html
 <!DOCTYPE html>
 ```
+
 
 [Omisión de el doctype puede causar problemas](http://quirks.spec.whatwg.org) con malformación de tablas, formularios `<input>`, y más problemas generando la página.
 
 
 <a name="box-model-math"></a>
-### Matemática del modelo de caja (*Box Model*)
-Los elementos que tienen el ancho `width` especificado se alargan cuando tienen relleno `padding` y/o un borde con `border-width`. Para evitar estos problemas usa el ya común [*reset* `box-sizing: border-box;`](http://www.paulirish.com/2012/box-sizing-border-box-ftw/).
+### Matemática del modelo de caja (Box Model)
+Los elementos que tienen el ancho `width` especificado se alargan cuando tienen relleno `padding` y/o un borde con `border-width`. Para evitar estos problemas usa el ya común [reset](http://www.paulirish.com/2012/box-sizing-border-box-ftw/) `box-sizing: border-box;`.
 
 
 <a name="rems-mobile-safari"></a>
@@ -43,6 +45,7 @@ Los elementos que tienen el ancho `width` especificado se alargan cuando tienen 
 Mientras que Safari móvil permite el uso de `rems` en todos los valores de la propiedad, se vuelve loco cuando se utilizan las `rems` en `media queries` y el texto de la página se vuelve infinitamente intermitente entre varios tamaños.
 
 Por ahora, mejor usar las unidades `em` en vez de las unidades `rem`.
+
 
 ```css
 html {
@@ -63,6 +66,7 @@ html {
   }
 }
 ```
+
 
 **Ayuda!** *Si tienes un link para reportar bugs a Apple o WebKit, me encantaría incluirlo aquí. Este problema sólo ocurre en la versión de Safari para dispositivos móviles y no en la versión de escritorio, por lo tanto, no se bien dónde reportar este error*.
 
@@ -88,6 +92,7 @@ Si utilizas `float`, es probablemente necesario emplear la propiedad `clear` en 
 
 Aquí está el [micro clearfix](http://nicolasgallagher.com/micro-clearfix-hack/) que usa `clear` con una clase separada.
 
+
 ```css
 .clearfix:before,
 .clearfix:after {
@@ -99,7 +104,9 @@ Aquí está el [micro clearfix](http://nicolasgallagher.com/micro-clearfix-hack/
 }
 ```
 
+
 Alternativamente, especifica `overflow`, con `auto` o `hidden` en el elemento principal.
+
 
 ```css
 .parent {
@@ -110,7 +117,8 @@ Alternativamente, especifica `overflow`, con `auto` o `hidden` en el elemento pr
 }
 ```
 
-Tenga en cuenta que `overflow` puede causar otros defectos secundarios indeseables, generalmente alrededor de elementos posicionados dentro del elemento padre.
+
+Ten en cuenta que `overflow` puede causar otros defectos secundarios indeseables, generalmente alrededor de elementos posicionados dentro del elemento padre.
 
 **Pro-Tip!** Hazte un favor a ti mismo y a tus colegas incluyendo el comentario `/* clearfix */` al utilizar la propiedad `clear` para `floats` ya que la propiedad se puede usar por otras razones.
 
@@ -121,8 +129,9 @@ Un elemento padre que solo tiene contenido `float` tendrá la altura calcuda `he
 
 
 <a name="floats-block-level"></a>
-### *Floats* son a nivel de bloque (*block level*)
-Elementos `float` son automaticamente a nivel de bloque (`display: block;`). No es necesario especificar `display` ya que sera ignorada por el navegador a menos que tenga el valor `none`.
+### *Floats* son a nivel de bloque (block level)
+Elementos `float` son automaticamente a nivel de bloque `display: block;`. No es necesario especificar `display` ya que sera ignorada por el navegador a menos que tenga el valor `none`.
+
 
 ```css
 .element {
@@ -131,12 +140,13 @@ Elementos `float` son automaticamente a nivel de bloque (`display: block;`). No 
 }
 ```
 
+
 ***Fun fact:*** *Hace años, tuvimos que especificar `display: inline;` para hacer que la propiedad `float` funcione correctamente en IE6 y evitar el [bug de margen duplicado](http://www.positioniseverything.net/explorer/doubled-margin.html). Sin embargo, esos días han quedado atrás.*
 
 
 <a name="vertical-margins-collapse"></a>
-### Márgenes verticalmente adyacentes se cierran (*collapse*)
-Los márgenes superiores e inferiores de los elementos adyacentes (uno tras otro) se cierran (*collapse*) en varias situaciones, pero nunca en elementos posicionados `float` o `absolute`. Lee [este artículo MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/margin_collapsing) o la especificación CSS2 de márgenes cerrados en [Español](http://www.sidar.org/recur/desdi/traduc/es/css/box.html#collapsing-margins) o [Inglés](http://www.w3.org/TR/CSS2/box.html#collapsing-margins) para averiguar más.
+### Márgenes verticalmente adyacentes se cierran (collapse)
+Los márgenes superiores e inferiores de los elementos adyacentes (uno tras otro) se cierran (collapse) en varias situaciones, pero nunca en elementos posicionados `float` o `absolute`. Lee [este artículo MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/margin_collapsing) o la especificación CSS2 de márgenes cerrados en [Español](http://www.sidar.org/recur/desdi/traduc/es/css/box.html#collapsing-margins) o [Inglés](http://www.w3.org/TR/CSS2/box.html#collapsing-margins) para averiguar más.
 
 Los márgenes horizontales *nunca se cierran*.
 
@@ -154,7 +164,8 @@ Por razones desconocidas, Firefox aplica un `line-height` a los botones de enví
 1. Utiliza sólo los elementos `<button>`
 2. No uses nunca `line-height` en tus botones.
 
-Si usas la primera alternativa (y recomiendo ésta de todos modos porque los <button> son genialese) esto es lo que necesitas saber:
+Si usas la primera alternativa (y recomiendo ésta de todos modos porque los `<button>` son geniales) esto es lo que necesitas saber:
+
 
 ```html
 <!-- No es tan bueno -->
@@ -165,6 +176,7 @@ Si usas la primera alternativa (y recomiendo ésta de todos modos porque los <bu
 <button type="submit">Enviar</button>
 <button type="button">Cancelar</button>
 ```
+
 
 Si prefieres usar la segunda opción, simplemente excluye `line-height` y en cambio usa **sólo** `padding` para alinear el texto del botón. [Mira este ejemplo en JS Bin](http://jsbin.com/yabek/4/) en Firefox per ver el problema y la solución.
 
@@ -184,6 +196,7 @@ button::-moz-focus-inner {
   border: 0;
 }
 ```
+
 
 Puedes ver esta solución en acción en el mismo [ejemplo en JS Bin](http://jsbin.com/yabek/4/) mencionado en la sección anterior.
 
