@@ -2,7 +2,7 @@
 
 **WTF, HTML y CSS?** es una lista de razones por las que HTML y CSS puedan hacerte decir "qué carajo". Una selección de errores, incertidumbres y dilemas frecuentemente frustrantes de HTML y CSS, creada con el objetivo de que sean _menos_ comunes.
 
-**[Empieza a leer ☞]()**
+**[Empieza a leer ☞](http://aauri.github.io/wtf-html-y-css/)**
 
 ---
 
@@ -22,7 +22,7 @@ Las traducciones son mantenidas por sus creadores y es posible que no estén al 
 - [Italian](http://aauri.github.io/wtf-html-css/) - Traducido por [aauri](https://github.com/aauri)
 - [Korean/한국어](http://snack-x.github.io/wtf-html-css/) - Traducido por [Snack](https://github.com/Snack-X)
 - [Portuguese](http://webfatorial.github.io/wtf-html-css/) - Traducido por [webfatorial](http://webfatorial.com/)
-- [Spanish]() - Traducido por [aauri](https://github.com/aauri)
+- [Spanish](http://aauri.github.io/wtf-html-y-css/) - Traducido por [aauri](https://github.com/aauri)
 
 Tienes una traducción que te gustaría añadir? Abre un *pull request* para añadirla aquí (en order alfabético).
 
