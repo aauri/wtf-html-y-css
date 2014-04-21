@@ -37,7 +37,8 @@ Incluye siempre un doctype. Les recomiendo el simple doctype de HTML5:
 
 <a name="box-model-math"></a>
 ### Matemática del modelo de caja (Box Model)
-Los elementos que tienen el ancho `width` especificado se alargan cuando tienen relleno `padding` y/o un borde con `border-width`. Para evitar estos problemas usa el ya común [reset](http://www.paulirish.com/2012/box-sizing-border-box-ftw/) `box-sizing: border-box;`.
+Los elementos que tienen el ancho `width` especificado se alargan cuando tienen relleno `padding` y/o un borde con `border-width`. 
+Para evitar estos problemas usa el ya común [reset](http://www.paulirish.com/2012/box-sizing-border-box-ftw/) `box-sizing: border-box;`.
 
 
 <a name="rems-mobile-safari"></a>
