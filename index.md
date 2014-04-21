@@ -69,7 +69,7 @@ html {
 
 <a name="floats-first"></a>
 ### Flotantes "*Floats*" primero
-Los elementos flotantes `float` siempre deben venir primero en el orden del documento. Esto se debe a que los elementos `float` necesitan algo a que envolverse alrededor, de lo contrario, se representan con defectos en la calculación de la posición. 
+Los elementos flotantes `float` siempre deben venir primero en el orden del documento. Esto se debe a que los elementos `float` necesitan algo a que envolverse alrededor, si no, aparecen con defectos en la calculación de la posición. 
  
 
 ```html
@@ -106,7 +106,7 @@ Alternativamente, especifica `overflow`, con `auto` o `hidden` en el elemento pr
   overflow: auto; /* clearfix */
 }
 .other-parent {
-  overflow: hidden; /* clear fix */
+  overflow: hidden; /* clearfix */
 }
 ```
 
@@ -149,10 +149,10 @@ Por otra parte, si el `<tr>` y sus hijos `<td>` o `<th>` tienen el *mismo* `bord
 
 <a name="buttons-firefox"></a>
 ### Firefox y los botones `<input>`
-Por razones desconocidas, Firefox aplica un `line-height` a los botones de envío y `<imput>` que no se puede modificar con CSS. A este punto, tienes dos alternativas para lidiar con esto:
+Por razones desconocidas, Firefox aplica un `line-height` a los botones de envío y `<input>` que no se puede modificar con CSS. A este punto, tienes dos alternativas para lidiar con esto:
 
 1. Utiliza sólo los elementos `<button>`
-2. Non uses nunca `line-height` en tus botones.
+2. No uses nunca `line-height` en tus botones.
 
 Si usas la primera alternativa (y recomiendo ésta de todos modos porque los <button> son genialese) esto es lo que necesitas saber:
 
@@ -192,7 +192,7 @@ Puedes ver esta solución en acción en el mismo [ejemplo en JS Bin](http://jsbi
 
 <a name="buttons-type"></a>
 ### Asigne siempre un `type` a `<button>`
-El valor inicial es `submit`, es decir, cualquier botón en un formulario puede enviar el formulario. Es mejor usar `type="button"` para todo lo que no envía el formulario, y usar  `type="submit"` para todos los botones para enviar.
+El valor inicial es `submit`, es decir, cualquier botón en un formulario puede enviar el formulario. Es mejor usar `type="button"` para todo lo que no envía el formulario, y usar `type="submit"` para todos los botones para enviar.
 
 ```html
 <button type="submit">Enviar</button>
@@ -210,7 +210,7 @@ Para todas las acciones que requieren un `<button>` y no son parte de un formula
 
 <a name="ie-selector-limit"></a>
 ### Límite de selectores en Internet Explorer
-Internet Explorer 9 y versiones anteriores tienen un máximo de 4096 selectores por hoja de estilos. También tienen un límite de 31 hojas de estilo y `<style></style>` incluidos juntos por página. Cualquier cosa más después de este límite es omitido por el navegador. Te toca escoger entre dividir tu CSS o refactorización. Yo sugeriría el último. 
+Internet Explorer 9 y versiones anteriores tienen un máximo de 4096 selectores por hoja de estilo. También tienen un límite de 31 hojas de estilo y `<style></style>` incluidos juntos por página. Cualquier cosa más después de este límite es omitido por el navegador. Te toca escoger entre dividir tu CSS o refactorización. Yo sugeriría el último. 
 
 Por si acaso, así es como los navegadores cuentan selectores:
 
@@ -231,7 +231,7 @@ input[type="text"],
 
 <a name="position-explained"></a>
 ### Posicionamiento `position` aclarado
-Elementos `position: fixed;` son colocados en relación a la ventanilla *"viewport"* del navegador. Elementos `position: absolute;` se posicionan en relación a su bloque padre  más cercano que tenga una posición aparte `static` (por ejemplo, `relative`, `absolute`, o `fixed`).
+Elementos `position: fixed;` son colocados en relación a la ventanilla *"viewport"* del navegador. Elementos `position: absolute;` se posicionan en relación a su bloque padre  más cercano que tenga una posición aparte a `static` (como por ejemplo, `relative`, `absolute`, o `fixed`).
 
 
 <a name="position-width"></a>
