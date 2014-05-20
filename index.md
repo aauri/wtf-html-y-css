@@ -218,7 +218,7 @@ Para todas las acciones que requieren un `<button>` y no son parte de un formula
 <button class="dismiss" type="button">x</button>
 ```
 
-**Fun fact:** *Al parecer, IE7 no soporta adecuadamente el atributo `value` en elementos `<button>`. En lugar de leer el contenido del atributo, lee el "innerHTML" (el contenido entre la apertura y cierre de la etiqueta <button>). Sin embargo, no me preocupo mucho de esto por dos razones: el uso de IE7 está en baja, y es bastante raro el uso conjunto de un valor y "innerHTML" en `<button>`*
+**Dato curioso:** *Al parecer, IE7 no soporta adecuadamente el atributo `value` en elementos `<button>`. En lugar de leer el contenido del atributo, lee el "innerHTML" (el contenido entre la apertura y cierre de la etiqueta `<button>`). Sin embargo, no me preocupo mucho de esto por dos razones: el uso de IE7 está en baja, y es bastante raro el uso conjunto de un valor y "innerHTML" en `<button>`*
 
 
 <a name="ie-selector-limit"></a>
