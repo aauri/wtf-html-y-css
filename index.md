@@ -204,7 +204,7 @@ Puedes ver esta solución en acción en el mismo [ejemplo en JS Bin](http://jsbi
 
 
 <a name="buttons-type"></a>
-### Asigne siempre un `type` a `<button>`
+### Asigna siempre un `type` a los `<button>`
 El valor inicial es `submit`, es decir, cualquier botón en un formulario puede enviar el formulario. Es mejor usar `type="button"` para todo lo que no envía el formulario, y usar `type="submit"` para todos los botones para enviar.
 
 ```html
@@ -218,12 +218,12 @@ Para todas las acciones que requieren un `<button>` y no son parte de un formula
 <button class="dismiss" type="button">x</button>
 ```
 
-**Dato curioso:** *Al parecer, IE7 no soporta adecuadamente el atributo `value` en elementos `<button>`. En lugar de leer el contenido del atributo, lee el "innerHTML" (el contenido entre la apertura y cierre de la etiqueta `<button>`). Sin embargo, no me preocupo mucho de esto por dos razones: el uso de IE7 está en baja, y es bastante raro el uso conjunto de un valor y "innerHTML" en `<button>`*
+**Dato curioso:** *Al parecer, IE7 no soporta adecuadamente el atributo `value` en elementos `<button>`. En lugar de leer el contenido del atributo, lee el "innerHTML" (el contenido entre la apertura y cierre de la etiqueta `<button>`). Sin embargo, no me preocupo mucho de esto por dos razones: el uso de IE7 está a la baja, y es bastante raro el uso conjunto de un valor y el "innerHTML" en un `<button>`*
 
 
 <a name="ie-selector-limit"></a>
 ### Límite de selectores en Internet Explorer
-Internet Explorer 9 y versiones anteriores tienen un máximo de 4096 selectores por hoja de estilo. También tienen un límite de 31 hojas de estilo y `<style></style>` incluidos juntos por página. Cualquier cosa más después de este límite es omitido por el navegador. Te toca escoger entre dividir tu CSS o refactorización. Yo sugeriría el último. 
+Internet Explorer 9 y versiones anteriores tienen un máximo de 4096 selectores por hoja de estilo. También tienen un límite de 31 hojas de estilo y etiquetas `<style></style>` incluidas juntos por página. Cualquier cosa más, después de este límite es omitido por el navegador. Te toca escoger entre dividir tu CSS o refactorizarlo. Yo sugeriría lo último.
 
 Por si acaso, así es como los navegadores cuentan selectores:
 
@@ -231,11 +231,11 @@ Por si acaso, así es como los navegadores cuentan selectores:
 /* Un selector */
 .element { }
 
-/* Más dos selectores */
+/* Dos selectores más */
 .element,
 .other-element { }
 
-/* Más otros tres selectores */
+/* Tres selectores más */
 input[type="text"],
 .form-control,
 .form-group > input { }
@@ -244,7 +244,7 @@ input[type="text"],
 
 <a name="position-explained"></a>
 ### Posicionamiento `position` aclarado
-Elementos `position: fixed;` son colocados en relación a la ventanilla *"viewport"* del navegador. Elementos `position: absolute;` se posicionan en relación a su bloque padre más cercano que tenga una posición aparte a `static` (como por ejemplo, `relative`, `absolute`, o `fixed`).
+Los elementos con `position: fixed;` son colocados en relación al *"viewport"* del navegador. Los elementos `position: absolute;` se posicionan en relación a su bloque padre más cercano que tenga una posición aparte a `static` (como por ejemplo, `relative`, `absolute`, o `fixed`).
 
 
 <a name="position-width"></a>
@@ -254,6 +254,6 @@ No asignes `width: 100%;` a un elemento con `position: [absolute|fixed];`, `left
 
 <a name="position-transforms"></a>
 ### Posicionamiento `fixed` con `transform`
-Navegadores interrumpen `position: fixed;` cuando el elemento padre tiene la propiedad `transform`. El uso de `transform` crea un bloque de contenido nuevo, y esto efectivamente obliga al padre a posicionarse `position: relative;` y el elemento `fixed` a comportarse como `position: absolute;`.
+Los navegadores interrumpen el `position: fixed;` cuando el elemento padre tiene la propiedad `transform`. El uso de `transform` crea un bloque de contenido nuevo, y esto efectivamente obliga al padre a posicionarse con `position: relative;` y el elemento `fixed` a comportarse como `position: absolute;`.
 
-[Aquí esta un ejemplo](http://jsbin.com/yabek/1/) y puedes tambien leer el [post de Eric Meyers sobre este asunto](http://meyerweb.com/eric/thoughts/2011/09/12/un-fixing-fixed-elements-with-css-transforms/).
+[Aquí está un ejemplo](http://jsbin.com/yabek/1/) y puedes tambien leer el [post de Eric Meyers sobre este asunto](http://meyerweb.com/eric/thoughts/2011/09/12/un-fixing-fixed-elements-with-css-transforms/).
