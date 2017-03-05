@@ -6,4 +6,4 @@ twitter:       https://twitter.com/uncasually
 
 markdown:      kramdown
 permalink:     pretty
-pygments:      true
+highlighter:   rouge
