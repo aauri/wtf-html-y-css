@@ -19,10 +19,14 @@ Abre un *issue* o *pull request* sugerir cambios o adiciones.
 
 Las traducciones son mantenidas por sus creadores y es posible que no estén al día con esta versión o la versión original en Inglés.
 
-- [Italian](http://aauri.github.io/wtf-html-css/) - Traducido por [aauri](https://github.com/aauri)
+- [French](http://mathieuhays.github.io/wtf-html-css/) - Traducido por [mathieuhays](https://github.com/mathieuhays)
+- [Italian](http://uncasually.github.io/wtf-html-css/) - Traducido por [uncasually](https://github.com/uncasually)
+- [Japan](http://makotot.github.io/wtf-html-css/) - Traducido por [makotot](https://github.com/makotot)
 - [Korean/한국어](http://snack-x.github.io/wtf-html-css/) - Traducido por [Snack](https://github.com/Snack-X)
 - [Portuguese](http://webfatorial.github.io/wtf-html-css/) - Traducido por [webfatorial](http://webfatorial.com/)
-- [Spanish](http://aauri.github.io/wtf-html-y-css/) - Traducido por [aauri](https://github.com/aauri)
+- [Spanish](http://uncasually.github.io/wtf-html-y-css/) - Traducido por [uncasually](https://github.com/uncasually)
+- [Russian](http://elforastero.github.io/wtf-html-css/) - Traducido por [ElForastero](https://github.com/elforastero)
+- [Chinese Simplified](https://lizheming.github.io/wtf-html-css/) - Traducido por [lizheming](https://github.com/lizheming)
 
 Tienes una traducción que te gustaría añadir? Abre un *pull request* para añadirla aquí (en order alfabético).
 
