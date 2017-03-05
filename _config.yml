@@ -4,6 +4,6 @@ repo:          https://github.com/uncasually/wtf-html-y-css
 twitter:       https://twitter.com/uncasually
 
 
-markdown:      redcarpet
+markdown:      kramdown
 permalink:     pretty
 pygments:      true
