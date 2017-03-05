@@ -2,7 +2,7 @@
 
 **WTF, HTML y CSS?** es una lista de razones por las que HTML y CSS puedan hacerte decir "qué carajo". Una selección de errores, incertidumbres y dilemas frecuentemente frustrantes de HTML y CSS, creada con el objetivo de que sean _menos_ comunes.
 
-**[Empieza a leer ☞](http://aauri.github.io/wtf-html-y-css/)**
+**[Empieza a leer ☞](http://uncasually.github.io/wtf-html-y-css/)**
 
 ---
 
