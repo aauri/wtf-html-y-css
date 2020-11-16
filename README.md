@@ -8,7 +8,7 @@
 
 ### Contribuciones
 
-Abre un *issue* o *pull request* sugerir cambios o adiciones.
+Abre un *issue* o *pull request* para sugerir cambios o adiciones.
 
 
 ### Licencia
